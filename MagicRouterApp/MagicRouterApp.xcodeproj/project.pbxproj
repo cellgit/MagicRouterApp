@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6F4B7B41562D8D22F77A1DB5 /* Pods_MagicRouterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77EBBB80D4AD7D6D66BB441 /* Pods_MagicRouterApp.framework */; };
+		CE4B1B2C299E0DCE00A6ED75 /* JiFenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B1B20299E0DCE00A6ED75 /* JiFenViewController.swift */; };
+		CE4B1B2D299E0DCE00A6ED75 /* Module_JiFen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B1B22299E0DCE00A6ED75 /* Module_JiFen.swift */; };
+		CE4B1B2E299E0DCE00A6ED75 /* ModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B1B23299E0DCE00A6ED75 /* ModuleManager.swift */; };
+		CE4B1B2F299E0DCE00A6ED75 /* MedalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B1B29299E0DCE00A6ED75 /* MedalsViewController.swift */; };
+		CE4B1B30299E0DCE00A6ED75 /* Module_Medals.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B1B2B299E0DCE00A6ED75 /* Module_Medals.swift */; };
 		CEBFFD17299B551A00BC0F8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBFFD16299B551A00BC0F8C /* AppDelegate.swift */; };
 		CEBFFD19299B551A00BC0F8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBFFD18299B551A00BC0F8C /* SceneDelegate.swift */; };
 		CEBFFD1B299B551A00BC0F8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBFFD1A299B551A00BC0F8C /* ViewController.swift */; };
@@ -18,6 +23,11 @@
 
 /* Begin PBXFileReference section */
 		C77EBBB80D4AD7D6D66BB441 /* Pods_MagicRouterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagicRouterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4B1B20299E0DCE00A6ED75 /* JiFenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiFenViewController.swift; sourceTree = "<group>"; };
+		CE4B1B22299E0DCE00A6ED75 /* Module_JiFen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module_JiFen.swift; sourceTree = "<group>"; };
+		CE4B1B23299E0DCE00A6ED75 /* ModuleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleManager.swift; sourceTree = "<group>"; };
+		CE4B1B29299E0DCE00A6ED75 /* MedalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalsViewController.swift; sourceTree = "<group>"; };
+		CE4B1B2B299E0DCE00A6ED75 /* Module_Medals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module_Medals.swift; sourceTree = "<group>"; };
 		CEBFFD13299B551A00BC0F8C /* MagicRouterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicRouterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBFFD16299B551A00BC0F8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBFFD18299B551A00BC0F8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,8 +66,115 @@
 				EBDE609802B3841818B4578A /* Pods-MagicRouterApp.debug.xcconfig */,
 				D67E35A7D43219065BCF9411 /* Pods-MagicRouterApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE4B1B1A299E0DCE00A6ED75 /* ModuleManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE4B1B23299E0DCE00A6ED75 /* ModuleManager.swift */,
+				CE4B1B1B299E0DCE00A6ED75 /* JiFen */,
+				CE4B1B24299E0DCE00A6ED75 /* Medals */,
+			);
+			path = ModuleManager;
+			sourceTree = "<group>";
+		};
+		CE4B1B1B299E0DCE00A6ED75 /* JiFen */ = {
+			isa = PBXGroup;
+			children = (
+				CE4B1B1C299E0DCE00A6ED75 /* Model */,
+				CE4B1B1D299E0DCE00A6ED75 /* View */,
+				CE4B1B1E299E0DCE00A6ED75 /* API */,
+				CE4B1B1F299E0DCE00A6ED75 /* ViewController */,
+				CE4B1B21299E0DCE00A6ED75 /* Router */,
+			);
+			path = JiFen;
+			sourceTree = "<group>";
+		};
+		CE4B1B1C299E0DCE00A6ED75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE4B1B1D299E0DCE00A6ED75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE4B1B1E299E0DCE00A6ED75 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CE4B1B1F299E0DCE00A6ED75 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE4B1B20299E0DCE00A6ED75 /* JiFenViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CE4B1B21299E0DCE00A6ED75 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CE4B1B22299E0DCE00A6ED75 /* Module_JiFen.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CE4B1B24299E0DCE00A6ED75 /* Medals */ = {
+			isa = PBXGroup;
+			children = (
+				CE4B1B25299E0DCE00A6ED75 /* Model */,
+				CE4B1B26299E0DCE00A6ED75 /* View */,
+				CE4B1B27299E0DCE00A6ED75 /* API */,
+				CE4B1B28299E0DCE00A6ED75 /* ViewController */,
+				CE4B1B2A299E0DCE00A6ED75 /* Router */,
+			);
+			path = Medals;
+			sourceTree = "<group>";
+		};
+		CE4B1B25299E0DCE00A6ED75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE4B1B26299E0DCE00A6ED75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE4B1B27299E0DCE00A6ED75 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CE4B1B28299E0DCE00A6ED75 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE4B1B29299E0DCE00A6ED75 /* MedalsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CE4B1B2A299E0DCE00A6ED75 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CE4B1B2B299E0DCE00A6ED75 /* Module_Medals.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		CEBFFD0A299B551A00BC0F8C = {
@@ -84,6 +201,7 @@
 				CEBFFD16299B551A00BC0F8C /* AppDelegate.swift */,
 				CEBFFD18299B551A00BC0F8C /* SceneDelegate.swift */,
 				CEBFFD1A299B551A00BC0F8C /* ViewController.swift */,
+				CE4B1B1A299E0DCE00A6ED75 /* ModuleManager */,
 				CEBFFD1C299B551A00BC0F8C /* Main.storyboard */,
 				CEBFFD1F299B551C00BC0F8C /* Assets.xcassets */,
 				CEBFFD21299B551C00BC0F8C /* LaunchScreen.storyboard */,
@@ -208,8 +326,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEBFFD1B299B551A00BC0F8C /* ViewController.swift in Sources */,
+				CE4B1B30299E0DCE00A6ED75 /* Module_Medals.swift in Sources */,
 				CEBFFD17299B551A00BC0F8C /* AppDelegate.swift in Sources */,
 				CEBFFD19299B551A00BC0F8C /* SceneDelegate.swift in Sources */,
+				CE4B1B2F299E0DCE00A6ED75 /* MedalsViewController.swift in Sources */,
+				CE4B1B2E299E0DCE00A6ED75 /* ModuleManager.swift in Sources */,
+				CE4B1B2D299E0DCE00A6ED75 /* Module_JiFen.swift in Sources */,
+				CE4B1B2C299E0DCE00A6ED75 /* JiFenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
